@@ -1,10 +1,10 @@
 import React from "react"
 import { shallow } from "enzyme"
-import AppFunctionalComponent from "./AppFunctionalComponent"
+import AppFunctionComponent from "./AppFunctionComponent"
 
-const appFunctionalComponent = shallow(<AppFunctionalComponent />)
+const appFunctionComponent = shallow(<AppFunctionComponent />)
 
 // It Renders.
 it("renders correctly", () => {
-  expect(appFunctionalComponent).toMatchSnapshot()
+  expect(appFunctionComponent).toMatchSnapshot()
 })
