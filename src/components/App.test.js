@@ -8,3 +8,9 @@ const app = shallow(<App />)
 it("renders correctly", () => {
   expect(app).toMatchSnapshot()
 })
+
+it("Initializes `state` as an empty array of gifts", () => {
+  expect(app.state()).toEqual({ gifts: [] })
+})
+
+// it("Adds a gift to `state` when the `Add Gift` button is clicked")
