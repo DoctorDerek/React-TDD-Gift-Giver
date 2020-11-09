@@ -14,10 +14,28 @@ class App extends Component {
     this.state = { gifts: [] }
   }
 
+  addGift = () => {
+    const { gifts } = this.state
+    const ids = gifts.map((gift) => gift.id)
+    // Find max ID; could use Math.max() and ... spread operator
+    // But a for loop is faster with large data sets typically
+    let maxID = 0
+    for (const id of ids) {
+      if (id > maxID) {
+        maxID = id
+      }
+    }
+    gifts.push({ id: maxID + 1 })
+    this.setState({ gifts })
+  }
+
   render() {
     return (
       <div>
         <h2>Gift Giver</h2>
+        <button id="add-gift-button" onClick={this.addGift}>
+          Add Gift
+        </button>
       </div>
     )
   }
