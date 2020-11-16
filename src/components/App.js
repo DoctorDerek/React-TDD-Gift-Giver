@@ -8,8 +8,8 @@ import React, { Component } from "react"
  * @extends {Component}
  */
 class App extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = { gifts: [] }
   }
@@ -36,6 +36,11 @@ class App extends Component {
         <button id="add-gift-button" onClick={this.addGift}>
           Add Gift
         </button>
+        <div id="gift-list">
+          {this.state.gifts.map((gift) => (
+            <div key={gift.id}>{gift.id}</div>
+          ))}
+        </div>
       </div>
     )
   }
