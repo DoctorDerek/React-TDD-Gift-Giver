@@ -14,8 +14,17 @@ describe("Gift", () => {
   })
 
   describe("when typing into the person input", () => {
+    const person = "Uncle"
+
     beforeEach(() => {
-      gift.find(".input-person").simulate("change")
+      gift
+        .find(".input-person")
+        .simulate("change", { target: { value: person } })
+    })
+
+    it("Updates the person in `state`", () => {
+      // @ts-ignore because .state() is unknown to TypeScript
+      expect(gift.state().person).toEqual(person)
     })
   })
 })
