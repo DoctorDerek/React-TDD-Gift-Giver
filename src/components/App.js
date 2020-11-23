@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Gift from "./Gift"
 
 /**
  * Class component version of App
@@ -29,6 +30,11 @@ class App extends Component {
     this.setState({ gifts })
   }
 
+  removeGift = (id) => {
+    const gifts = this.state.gifts.filter((gift) => gift.id !== id)
+    this.setState({ gifts })
+  }
+
   render() {
     return (
       <div>
@@ -38,7 +44,7 @@ class App extends Component {
         </button>
         <div id="gift-list">
           {this.state.gifts.map((gift) => (
-            <div key={gift.id}>{gift.id}</div>
+            <Gift id={gift.id} />
           ))}
         </div>
       </div>

@@ -38,6 +38,7 @@ describe("when clicking the `Add Gift` button", () => {
 
   describe("and the user wants to remove a gift", () => {
     beforeEach(() => {
+      // @ts-ignore because we don't know what's in the component
       app.instance().removeGift(id)
     })
     it("Removes the gift with that id from `state`", () => {
