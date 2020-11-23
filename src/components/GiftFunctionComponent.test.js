@@ -1,9 +1,9 @@
 import React from "react"
 import { shallow } from "enzyme"
-import Gift from "./gift"
+import GiftFunctionComponent from "./GiftFunctionComponent"
 
 describe("Gift", () => {
-  const gift = shallow(<Gift />)
+  const gift = shallow(<GiftFunctionComponent />)
 
   it("renders properly", () => {
     expect(gift).toMatchSnapshot()
