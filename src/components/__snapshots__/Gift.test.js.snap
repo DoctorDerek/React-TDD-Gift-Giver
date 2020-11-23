@@ -4,11 +4,7 @@ exports[`Gift renders properly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Gift
-    gift={
-        Object {
-            "id": 1,
-          }
-    }
+    id={1}
     removeGift={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -54,7 +50,7 @@ ShallowWrapper {
           active={false}
           className="btn-remove"
           disabled={false}
-          onClick={undefined}
+          onClick={[Function]}
           variant="primary"
 >
           Remove Gift
@@ -66,7 +62,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "Person",
         "nodeType": "function",
         "props": Object {
           "children": Array [
@@ -140,7 +136,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "Present",
         "nodeType": "function",
         "props": Object {
           "children": Array [
@@ -221,7 +217,7 @@ ShallowWrapper {
           "children": "Remove Gift",
           "className": "btn-remove",
           "disabled": false,
-          "onClick": undefined,
+          "onClick": [Function],
           "variant": "primary",
         },
         "ref": null,
@@ -367,7 +363,7 @@ ShallowWrapper {
             active={false}
             className="btn-remove"
             disabled={false}
-            onClick={undefined}
+            onClick={[Function]}
             variant="primary"
 >
             Remove Gift
@@ -379,7 +375,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "Person",
           "nodeType": "function",
           "props": Object {
             "children": Array [
@@ -453,7 +449,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "Present",
           "nodeType": "function",
           "props": Object {
             "children": Array [
@@ -534,7 +530,7 @@ ShallowWrapper {
             "children": "Remove Gift",
             "className": "btn-remove",
             "disabled": false,
-            "onClick": undefined,
+            "onClick": [Function],
             "variant": "primary",
           },
           "ref": null,

@@ -23,6 +23,10 @@ const AppFunctionComponent = (props) => {
     setGifts((gifts) => [...gifts, { id: maxID + 1 }])
   }
 
+  const removeGift = (id) => {
+    setGifts((gifts) => gifts.filter((gift) => gift.id !== id))
+  }
+
   return (
     <div>
       <h2>Gift Giver</h2>
@@ -31,7 +35,11 @@ const AppFunctionComponent = (props) => {
       </button>
       <div id="gift-list">
         {gifts.map((gift) => (
-          <GiftFunctionComponent id={gift.id} key={gift.id} />
+          <GiftFunctionComponent
+            id={gift.id}
+            key={gift.id}
+            removeGift={removeGift}
+          />
         ))}
       </div>
     </div>

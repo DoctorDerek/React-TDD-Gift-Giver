@@ -7,8 +7,10 @@ import {
   Button,
 } from "react-bootstrap"
 
-const Gift = () => {
+const Gift = ({ id, removeGift }) => {
+  // eslint-disable-next-line because we're not using person directly
   const [person, setPerson] = useState("")
+  // eslint-disable-next-line because we're not using present directly
   const [present, setPresent] = useState("")
 
   return (
@@ -31,6 +33,9 @@ const Gift = () => {
           }}
         ></FormControl>
       </FormGroup>
+      <Button className="btn-remove" onClick={() => removeGift(id)}>
+        Remove Gift
+      </Button>
     </Form>
   )
 }
