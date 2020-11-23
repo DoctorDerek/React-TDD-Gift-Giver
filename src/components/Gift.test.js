@@ -27,4 +27,19 @@ describe("Gift", () => {
       expect(gift.state().person).toEqual(person)
     })
   })
+
+  describe("when typing into the present input", () => {
+    const present = "Money"
+
+    beforeEach(() => {
+      gift
+        .find(".input-present")
+        .simulate("change", { target: { value: present } })
+    })
+
+    it("Updates the person in `state`", () => {
+      // @ts-ignore because .state() is unknown to TypeScript
+      expect(gift.state().present).toEqual(present)
+    })
+  })
 })

@@ -14,4 +14,10 @@ describe("Gift", () => {
       gift.find(".input-person").simulate("change")
     })
   })
+
+  describe("when typing into the present input", () => {
+    beforeEach(() => {
+      gift.find(".input-present").simulate("change")
+    })
+  })
 })

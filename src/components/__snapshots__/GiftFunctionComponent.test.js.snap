@@ -33,6 +33,18 @@ ShallowWrapper {
                         onChange={[Function]}
                 />
         </Unknown>
+        <Unknown>
+                <Unknown
+                        column={false}
+                        srOnly={false}
+                >
+                        Present
+                </Unknown>
+                <Unknown
+                        className="input-present"
+                        onChange={[Function]}
+                />
+        </Unknown>
 </Unknown>,
     },
     "ref": null,
@@ -41,95 +53,185 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": <Unknown>
-          <Unknown
-                    column={false}
-                    srOnly={false}
-          >
-                    Person
-          </Unknown>
-          <Unknown
-                    className="input-person"
-                    onChange={[Function]}
-          />
+        "children": Array [
+          <Unknown>
+            <Unknown
+                        column={false}
+                        srOnly={false}
+            >
+                        Person
+            </Unknown>
+            <Unknown
+                        className="input-person"
+                        onChange={[Function]}
+            />
 </Unknown>,
+          <Unknown>
+            <Unknown
+                        column={false}
+                        srOnly={false}
+            >
+                        Present
+            </Unknown>
+            <Unknown
+                        className="input-present"
+                        onChange={[Function]}
+            />
+</Unknown>,
+        ],
         "inline": false,
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": Array [
-            <Unknown
-              column={false}
-              srOnly={false}
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                column={false}
+                srOnly={false}
 >
-              Person
+                Person
 </Unknown>,
-            <Unknown
-              className="input-person"
-              onChange={[Function]}
+              <Unknown
+                className="input-person"
+                onChange={[Function]}
 />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "Person",
-              "column": false,
-              "srOnly": false,
-            },
-            "ref": null,
-            "rendered": "Person",
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "defaultProps": Object {
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Person",
                 "column": false,
                 "srOnly": false,
               },
-              "displayName": "FormLabel",
-              "render": [Function],
-            },
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "className": "input-person",
-              "onChange": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "Feedback": Object {
+              "ref": null,
+              "rendered": "Person",
+              "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
-                "displayName": "Feedback",
-                "propTypes": Object {
-                  "as": [Function],
-                  "tooltip": [Function],
-                  "type": [Function],
+                "defaultProps": Object {
+                  "column": false,
+                  "srOnly": false,
                 },
+                "displayName": "FormLabel",
                 "render": [Function],
               },
-              "displayName": "FormControl",
-              "render": [Function],
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "input-person",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "Feedback": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "displayName": "Feedback",
+                  "propTypes": Object {
+                    "as": [Function],
+                    "tooltip": [Function],
+                    "type": [Function],
+                  },
+                  "render": [Function],
+                },
+                "displayName": "FormControl",
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "FormGroup",
+            "render": [Function],
           },
-        ],
-        "type": Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "displayName": "FormGroup",
-          "render": [Function],
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Unknown
+                column={false}
+                srOnly={false}
+>
+                Present
+</Unknown>,
+              <Unknown
+                className="input-present"
+                onChange={[Function]}
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Present",
+                "column": false,
+                "srOnly": false,
+              },
+              "ref": null,
+              "rendered": "Present",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "column": false,
+                  "srOnly": false,
+                },
+                "displayName": "FormLabel",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "className": "input-present",
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "Feedback": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "displayName": "Feedback",
+                  "propTypes": Object {
+                    "as": [Function],
+                    "tooltip": [Function],
+                    "type": [Function],
+                  },
+                  "render": [Function],
+                },
+                "displayName": "FormControl",
+                "render": [Function],
+              },
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "FormGroup",
+            "render": [Function],
+          },
+        },
+      ],
       "type": Object {
         "$$typeof": Symbol(react.forward_ref),
         "Check": Object {
@@ -247,6 +349,18 @@ ShallowWrapper {
                               onChange={[Function]}
                     />
           </Unknown>
+          <Unknown>
+                    <Unknown
+                              column={false}
+                              srOnly={false}
+                    >
+                              Present
+                    </Unknown>
+                    <Unknown
+                              className="input-present"
+                              onChange={[Function]}
+                    />
+          </Unknown>
 </Unknown>,
       },
       "ref": null,
@@ -255,95 +369,185 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "children": <Unknown>
-            <Unknown
-                        column={false}
-                        srOnly={false}
-            >
-                        Person
-            </Unknown>
-            <Unknown
-                        className="input-person"
-                        onChange={[Function]}
-            />
+          "children": Array [
+            <Unknown>
+              <Unknown
+                            column={false}
+                            srOnly={false}
+              >
+                            Person
+              </Unknown>
+              <Unknown
+                            className="input-person"
+                            onChange={[Function]}
+              />
 </Unknown>,
+            <Unknown>
+              <Unknown
+                            column={false}
+                            srOnly={false}
+              >
+                            Present
+              </Unknown>
+              <Unknown
+                            className="input-present"
+                            onChange={[Function]}
+              />
+</Unknown>,
+          ],
           "inline": false,
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": Array [
-              <Unknown
-                column={false}
-                srOnly={false}
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Unknown
+                  column={false}
+                  srOnly={false}
 >
-                Person
+                  Person
 </Unknown>,
-              <Unknown
-                className="input-person"
-                onChange={[Function]}
+                <Unknown
+                  className="input-person"
+                  onChange={[Function]}
 />,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": "Person",
-                "column": false,
-                "srOnly": false,
-              },
-              "ref": null,
-              "rendered": "Person",
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "defaultProps": Object {
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Person",
                   "column": false,
                   "srOnly": false,
                 },
-                "displayName": "FormLabel",
-                "render": [Function],
-              },
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "className": "input-person",
-                "onChange": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "Feedback": Object {
+                "ref": null,
+                "rendered": "Person",
+                "type": Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "displayName": "Feedback",
-                  "propTypes": Object {
-                    "as": [Function],
-                    "tooltip": [Function],
-                    "type": [Function],
+                  "defaultProps": Object {
+                    "column": false,
+                    "srOnly": false,
                   },
+                  "displayName": "FormLabel",
                   "render": [Function],
                 },
-                "displayName": "FormControl",
-                "render": [Function],
               },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "input-person",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "Feedback": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "displayName": "Feedback",
+                    "propTypes": Object {
+                      "as": [Function],
+                      "tooltip": [Function],
+                      "type": [Function],
+                    },
+                    "render": [Function],
+                  },
+                  "displayName": "FormControl",
+                  "render": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "FormGroup",
+              "render": [Function],
             },
-          ],
-          "type": Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "displayName": "FormGroup",
-            "render": [Function],
           },
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Unknown
+                  column={false}
+                  srOnly={false}
+>
+                  Present
+</Unknown>,
+                <Unknown
+                  className="input-present"
+                  onChange={[Function]}
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": "Present",
+                  "column": false,
+                  "srOnly": false,
+                },
+                "ref": null,
+                "rendered": "Present",
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "defaultProps": Object {
+                    "column": false,
+                    "srOnly": false,
+                  },
+                  "displayName": "FormLabel",
+                  "render": [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "className": "input-present",
+                  "onChange": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "Feedback": Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "displayName": "Feedback",
+                    "propTypes": Object {
+                      "as": [Function],
+                      "tooltip": [Function],
+                      "type": [Function],
+                    },
+                    "render": [Function],
+                  },
+                  "displayName": "FormControl",
+                  "render": [Function],
+                },
+              },
+            ],
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "displayName": "FormGroup",
+              "render": [Function],
+            },
+          },
+        ],
         "type": Object {
           "$$typeof": Symbol(react.forward_ref),
           "Check": Object {

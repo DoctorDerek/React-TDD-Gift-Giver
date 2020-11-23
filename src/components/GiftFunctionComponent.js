@@ -23,6 +23,15 @@ const Gift = () => {
             }}
           ></FormControl>
         </FormGroup>
+        <FormGroup>
+          <FormLabel>Present</FormLabel>
+          <FormControl
+            className="input-present"
+            onChange={(event) => {
+              setPresent(() => event.target.value)
+            }}
+          ></FormControl>
+        </FormGroup>
       </Form>
     </div>
   )
