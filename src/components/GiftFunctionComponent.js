@@ -12,28 +12,26 @@ const Gift = () => {
   const [present, setPresent] = useState("")
 
   return (
-    <div>
-      <Form>
-        <FormGroup>
-          <FormLabel>Person</FormLabel>
-          <FormControl
-            className="input-person"
-            onChange={(event) => {
-              setPerson(() => event.target.value)
-            }}
-          ></FormControl>
-        </FormGroup>
-        <FormGroup>
-          <FormLabel>Present</FormLabel>
-          <FormControl
-            className="input-present"
-            onChange={(event) => {
-              setPresent(() => event.target.value)
-            }}
-          ></FormControl>
-        </FormGroup>
-      </Form>
-    </div>
+    <Form>
+      <FormGroup key="Person">
+        <FormLabel>Person</FormLabel>
+        <FormControl
+          className="input-person"
+          onChange={(event) => {
+            setPerson(() => event.target.value)
+          }}
+        ></FormControl>
+      </FormGroup>
+      <FormGroup key="Present">
+        <FormLabel>Present</FormLabel>
+        <FormControl
+          className="input-present"
+          onChange={(event) => {
+            setPresent(() => event.target.value)
+          }}
+        ></FormControl>
+      </FormGroup>
+    </Form>
   )
 }
 

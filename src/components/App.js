@@ -44,7 +44,7 @@ class App extends Component {
         </button>
         <div id="gift-list">
           {this.state.gifts.map((gift) => (
-            <Gift id={gift.id} />
+            <Gift id={gift.id} key={gift.id} removeGift={this.removeGift} />
           ))}
         </div>
       </div>

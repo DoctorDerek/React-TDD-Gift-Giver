@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import GiftFunctionComponent from "./GiftFunctionComponent"
 
 /**
  * Function component version of the App using React Hooks
@@ -30,7 +31,7 @@ const AppFunctionComponent = (props) => {
       </button>
       <div id="gift-list">
         {gifts.map((gift) => (
-          <div key={gift.id}>{gift.id}</div>
+          <GiftFunctionComponent id={gift.id} key={gift.id} />
         ))}
       </div>
     </div>
