@@ -22,4 +22,20 @@ describe("when clicking the `Add Gift` button", () => {
   it("Adds a new gift to the rendered list", () => {
     expect(app.find("#gift-list").children().length).toEqual(1)
   })
+
+  it("Creates a gift component", () => {
+    expect(app.find("Gift").exists()).toBe(true)
+  })
+
+  describe("and the user wants to remove a gift", () => {
+    /*beforeEach(() => {
+      // @ts-ignore because we don't know what's in the component
+      app.instance().removeGift(id)
+    })
+    it("Removes the gift with that id from `state`", () => {
+      // app.find("remove-gift").simulate("click")
+      // @ts-ignore because we don't know what's in state
+      expect(app.state().gifts).toEqual([])
+    })*/
+  })
 })

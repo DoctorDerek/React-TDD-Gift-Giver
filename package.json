@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.4",
-    "jest-cli": "20.0.4",
+    "jest-cli": "^20.0.4",
     "react": "16.13.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "16.13.1",
@@ -38,6 +38,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.js",
+      "!src/index.js"
     ]
   }
 }
