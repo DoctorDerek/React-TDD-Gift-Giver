@@ -8,10 +8,12 @@ import {
 } from "react-bootstrap"
 
 const Gift = ({ id, removeGift }) => {
-  // eslint-disable-next-line because we're not using person directly
+  // eslint-disable-next-line
   const [person, setPerson] = useState("")
-  // eslint-disable-next-line because we're not using present directly
+  // because we're not using person directly
+  // eslint-disable-next-line
   const [present, setPresent] = useState("")
+  // because we're not using present directly
 
   return (
     <Form className="gift">
