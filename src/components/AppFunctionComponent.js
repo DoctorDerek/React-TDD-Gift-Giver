@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { maxNumber } from "../helper_functions"
 import GiftFunctionComponent from "./GiftFunctionComponent"
 
 /**
@@ -12,15 +13,7 @@ const AppFunctionComponent = (props) => {
 
   const addGift = () => {
     const ids = gifts.map((gift) => gift.id)
-    // Find max ID; could use Math.max() and ... spread operator
-    // But a for loop is faster with large data sets typically
-    let maxID = 0
-    for (const id of ids) {
-      if (id > maxID) {
-        maxID = id
-      }
-    }
-    setGifts((gifts) => [...gifts, { id: maxID + 1 }])
+    setGifts((gifts) => [...gifts, { id: maxNumber(ids) + 1 }])
   }
 
   const removeGift = (id) => {
