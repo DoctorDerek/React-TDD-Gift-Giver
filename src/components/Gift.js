@@ -15,7 +15,7 @@ class Gift extends Component {
 
   render() {
     return (
-      <Form>
+      <Form className="gift">
         <FormGroup key="Person">
           <FormLabel>Person</FormLabel>
           <FormControl

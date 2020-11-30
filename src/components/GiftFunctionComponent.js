@@ -14,7 +14,7 @@ const Gift = ({ id, removeGift }) => {
   const [present, setPresent] = useState("")
 
   return (
-    <Form>
+    <Form className="gift">
       <FormGroup key="Person">
         <FormLabel>Person</FormLabel>
         <FormControl

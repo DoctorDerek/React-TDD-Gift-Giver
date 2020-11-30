@@ -3,6 +3,7 @@ import ReactDOM from "react-dom"
 
 import App from "./components/App"
 import AppFunctionComponent from "./components/AppFunctionComponent"
+import "./index.css"
 
 const rootElement = document.getElementById("root")
 ReactDOM.render(
