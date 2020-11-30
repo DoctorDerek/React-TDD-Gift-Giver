@@ -42,7 +42,6 @@ describe("when clicking the `Add Gift` button", () => {
       app.instance().removeGift(id)
     })
     it("Removes the gift with that id from `state`", () => {
-      // app.find("remove-gift").simulate("click")
       // @ts-ignore because we don't know what's in state
       expect(app.state().gifts).toEqual([])
     })

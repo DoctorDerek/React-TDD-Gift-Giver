@@ -9,3 +9,7 @@ export const maxNumber = (numbers) => {
   }
   return maxNumber
 }
+
+export const filteredArray = (array) => {
+  //
+}

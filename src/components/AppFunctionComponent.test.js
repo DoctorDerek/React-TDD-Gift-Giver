@@ -1,12 +1,13 @@
+import "jsdom-global/register"
 import React from "react"
-import { shallow } from "enzyme"
+import { mount } from "enzyme"
 import AppFunctionComponent from "./AppFunctionComponent"
 
-let app = shallow(<AppFunctionComponent />)
+let app = mount(<AppFunctionComponent />)
 
 beforeEach(() => {
   // Clean up between tests:
-  app = shallow(<AppFunctionComponent />)
+  app = mount(<AppFunctionComponent />)
 })
 
 // It Renders.
@@ -27,16 +28,15 @@ describe("when clicking the `Add Gift` button", () => {
     expect(app.find("Gift").exists()).toBe(true)
   })
 
-  // TODO
-  describe("and the user wants to remove a gift", () => {
-    /*beforeEach(() => {
-      // @ts-ignore because we don't know what's in the component
-      app.instance().removeGift(id)
+  describe("and the user wants to remove that gift", () => {
+    // The below tests won't work without using mount
+    /*
+    beforeEach(() => {
+      app.find(".btn-remove").simulate("click")
     })
-    it("Removes the gift with that id from `state`", () => {
-      // app.find("remove-gift").simulate("click")
-      // @ts-ignore because we don't know what's in state
-      expect(app.state().gifts).toEqual([])
-    })*/
+    it("Removes the only gift in the list from the DOM", () => {
+      expect(app.find("#gift-list").children().length).toEqual(0)
+    })
+    */
   })
 })
