@@ -21,18 +21,14 @@ const Gift = ({ id, removeGift }) => {
         <FormLabel>Person</FormLabel>
         <FormControl
           className="input-person"
-          onChange={(event) => {
-            setPerson(() => event.target.value)
-          }}
+          onChange={(event) => setPerson(() => event.target.value)}
         ></FormControl>
       </FormGroup>
       <FormGroup key="Present">
         <FormLabel>Present</FormLabel>
         <FormControl
           className="input-present"
-          onChange={(event) => {
-            setPresent(() => event.target.value)
-          }}
+          onChange={(event) => setPresent(() => event.target.value)}
         ></FormControl>
       </FormGroup>
       <Button className="btn-remove" onClick={() => removeGift(id)}>
