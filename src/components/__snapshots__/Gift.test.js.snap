@@ -27,8 +27,12 @@ ShallowWrapper {
                     column={false}
                     srOnly={false}
           >
-                    Person
+                    Person:
           </Unknown>
+           
+          <span
+                    className="person"
+          />
           <Unknown
                     className="input-person"
                     onChange={[Function]}
@@ -39,8 +43,12 @@ ShallowWrapper {
                     column={false}
                     srOnly={false}
           >
-                    Present
+                    Present:
           </Unknown>
+           
+          <span
+                    className="present"
+          />
           <Unknown
                     className="input-present"
                     onChange={[Function]}
@@ -71,8 +79,12 @@ ShallowWrapper {
               column={false}
               srOnly={false}
 >
-              Person
+              Person:
 </Unknown>,
+            " ",
+            <span
+              className="person"
+/>,
             <Unknown
               className="input-person"
               onChange={[Function]}
@@ -86,12 +98,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Person",
+              "children": "Person:",
               "column": false,
               "srOnly": false,
             },
             "ref": null,
-            "rendered": "Person",
+            "rendered": "Person:",
             "type": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -101,6 +113,19 @@ ShallowWrapper {
               "displayName": "FormLabel",
               "render": [Function],
             },
+          },
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "person",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "span",
           },
           Object {
             "instance": null,
@@ -145,8 +170,12 @@ ShallowWrapper {
               column={false}
               srOnly={false}
 >
-              Present
+              Present:
 </Unknown>,
+            " ",
+            <span
+              className="present"
+/>,
             <Unknown
               className="input-present"
               onChange={[Function]}
@@ -160,12 +189,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Present",
+              "children": "Present:",
               "column": false,
               "srOnly": false,
             },
             "ref": null,
-            "rendered": "Present",
+            "rendered": "Present:",
             "type": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -175,6 +204,19 @@ ShallowWrapper {
               "displayName": "FormLabel",
               "render": [Function],
             },
+          },
+          " ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+              "className": "present",
+            },
+            "ref": null,
+            "rendered": "",
+            "type": "span",
           },
           Object {
             "instance": null,
@@ -341,8 +383,12 @@ ShallowWrapper {
                         column={false}
                         srOnly={false}
             >
-                        Person
+                        Person:
             </Unknown>
+             
+            <span
+                        className="person"
+            />
             <Unknown
                         className="input-person"
                         onChange={[Function]}
@@ -353,8 +399,12 @@ ShallowWrapper {
                         column={false}
                         srOnly={false}
             >
-                        Present
+                        Present:
             </Unknown>
+             
+            <span
+                        className="present"
+            />
             <Unknown
                         className="input-present"
                         onChange={[Function]}
@@ -385,8 +435,12 @@ ShallowWrapper {
                 column={false}
                 srOnly={false}
 >
-                Person
+                Person:
 </Unknown>,
+              " ",
+              <span
+                className="person"
+/>,
               <Unknown
                 className="input-person"
                 onChange={[Function]}
@@ -400,12 +454,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "children": "Person",
+                "children": "Person:",
                 "column": false,
                 "srOnly": false,
               },
               "ref": null,
-              "rendered": "Person",
+              "rendered": "Person:",
               "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "defaultProps": Object {
@@ -415,6 +469,19 @@ ShallowWrapper {
                 "displayName": "FormLabel",
                 "render": [Function],
               },
+            },
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "person",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "span",
             },
             Object {
               "instance": null,
@@ -459,8 +526,12 @@ ShallowWrapper {
                 column={false}
                 srOnly={false}
 >
-                Present
+                Present:
 </Unknown>,
+              " ",
+              <span
+                className="present"
+/>,
               <Unknown
                 className="input-present"
                 onChange={[Function]}
@@ -474,12 +545,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "children": "Present",
+                "children": "Present:",
                 "column": false,
                 "srOnly": false,
               },
               "ref": null,
-              "rendered": "Present",
+              "rendered": "Present:",
               "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "defaultProps": Object {
@@ -489,6 +560,19 @@ ShallowWrapper {
                 "displayName": "FormLabel",
                 "render": [Function],
               },
+            },
+            " ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "present",
+              },
+              "ref": null,
+              "rendered": "",
+              "type": "span",
             },
             Object {
               "instance": null,

@@ -42,8 +42,9 @@ ShallowWrapper {
                     column={false}
                     srOnly={false}
           >
-                    Present: 
+                    Present:
           </Unknown>
+           
           <span
                     className="present"
           />
@@ -166,8 +167,9 @@ ShallowWrapper {
               column={false}
               srOnly={false}
 >
-              Present: 
+              Present:
 </Unknown>,
+            " ",
             <span
               className="present"
 />,
@@ -184,12 +186,12 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": "Present: ",
+              "children": "Present:",
               "column": false,
               "srOnly": false,
             },
             "ref": null,
-            "rendered": "Present: ",
+            "rendered": "Present:",
             "type": Object {
               "$$typeof": Symbol(react.forward_ref),
               "defaultProps": Object {
@@ -200,6 +202,7 @@ ShallowWrapper {
               "render": [Function],
             },
           },
+          " ",
           Object {
             "instance": null,
             "key": undefined,
@@ -392,8 +395,9 @@ ShallowWrapper {
                         column={false}
                         srOnly={false}
             >
-                        Present: 
+                        Present:
             </Unknown>
+             
             <span
                         className="present"
             />
@@ -516,8 +520,9 @@ ShallowWrapper {
                 column={false}
                 srOnly={false}
 >
-                Present: 
+                Present:
 </Unknown>,
+              " ",
               <span
                 className="present"
 />,
@@ -534,12 +539,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "children": "Present: ",
+                "children": "Present:",
                 "column": false,
                 "srOnly": false,
               },
               "ref": null,
-              "rendered": "Present: ",
+              "rendered": "Present:",
               "type": Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "defaultProps": Object {
@@ -550,6 +555,7 @@ ShallowWrapper {
                 "render": [Function],
               },
             },
+            " ",
             Object {
               "instance": null,
               "key": undefined,

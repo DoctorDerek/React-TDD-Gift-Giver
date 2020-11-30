@@ -10,6 +10,5 @@ export const maxNumber = (numbers) => {
   return maxNumber
 }
 
-export const filteredArray = (array) => {
-  //
-}
+export const removeItemByID = (array, id) =>
+  array.filter((item) => item.id !== id)

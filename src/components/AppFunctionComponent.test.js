@@ -1,13 +1,12 @@
-import "jsdom-global/register"
 import React from "react"
-import { mount } from "enzyme"
+import { shallow } from "enzyme"
 import AppFunctionComponent from "./AppFunctionComponent"
 
-let app = mount(<AppFunctionComponent />)
+let app = shallow(<AppFunctionComponent />)
 
 beforeEach(() => {
   // Clean up between tests:
-  app = mount(<AppFunctionComponent />)
+  app = shallow(<AppFunctionComponent />)
 })
 
 // It Renders.

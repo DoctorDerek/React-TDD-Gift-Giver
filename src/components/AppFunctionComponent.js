@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Button } from "react-bootstrap"
-import { maxNumber } from "../helper_functions"
+import { maxNumber, removeItemByID } from "../helper_functions"
 import GiftFunctionComponent from "./GiftFunctionComponent"
 
 /**
@@ -18,7 +18,7 @@ const AppFunctionComponent = (props) => {
   }
 
   const removeGift = (id) => {
-    setGifts((gifts) => gifts.filter((gift) => gift.id !== id))
+    setGifts((gifts) => removeItemByID(gifts, id))
   }
 
   return (

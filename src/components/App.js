@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Button } from "react-bootstrap"
-import { maxNumber } from "../helper_functions"
+import { maxNumber, removeItemByID } from "../helper_functions"
 import Gift from "./Gift"
 
 /**
@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   removeGift = (id) => {
-    const gifts = this.state.gifts.filter((gift) => gift.id !== id)
+    const gifts = removeItemByID(this.state.gifts, id)
     this.setState({ gifts })
   }
 
