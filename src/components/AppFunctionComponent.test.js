@@ -27,6 +27,7 @@ describe("when clicking the `Add Gift` button", () => {
     expect(app.find("Gift").exists()).toBe(true)
   })
 
+  // TODO
   describe("and the user wants to remove a gift", () => {
     /*beforeEach(() => {
       // @ts-ignore because we don't know what's in the component

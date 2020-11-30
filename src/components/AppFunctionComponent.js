@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Button } from "react-bootstrap"
 import { maxNumber } from "../helper_functions"
 import GiftFunctionComponent from "./GiftFunctionComponent"
 
@@ -23,9 +24,9 @@ const AppFunctionComponent = (props) => {
   return (
     <div>
       <h2>Gift Giver</h2>
-      <button id="add-gift-button" onClick={() => addGift()}>
+      <Button id="add-gift-button" onClick={() => addGift()}>
         Add Gift
-      </button>
+      </Button>
       <div id="gift-list">
         {gifts.map((gift) => (
           <GiftFunctionComponent

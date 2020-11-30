@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Button } from "react-bootstrap"
 import { maxNumber } from "../helper_functions"
 import Gift from "./Gift"
 
@@ -32,9 +33,9 @@ class App extends Component {
     return (
       <div>
         <h2>Gift Giver</h2>
-        <button id="add-gift-button" onClick={this.addGift}>
+        <Button id="add-gift-button" onClick={this.addGift}>
           Add Gift
-        </button>
+        </Button>
         <div id="gift-list">
           {this.state.gifts.map((gift) => (
             <Gift id={gift.id} key={gift.id} removeGift={this.removeGift} />
