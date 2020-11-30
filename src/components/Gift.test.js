@@ -40,7 +40,7 @@ describe("Gift", () => {
         .simulate("change", { target: { value: present } })
     })
 
-    it("Updates the person in `state`", () => {
+    it("Updates the present in `state`", () => {
       // @ts-ignore because .state() is unknown to TypeScript
       expect(gift.state().present).toEqual(present)
     })

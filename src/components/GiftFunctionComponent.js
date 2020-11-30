@@ -8,24 +8,22 @@ import {
 } from "react-bootstrap"
 
 const Gift = ({ id, removeGift }) => {
-  // eslint-disable-next-line
   const [person, setPerson] = useState("")
-  // because we're not using person directly
-  // eslint-disable-next-line
   const [present, setPresent] = useState("")
-  // because we're not using present directly
 
   return (
     <Form className="gift">
       <FormGroup key="Person">
-        <FormLabel>Person</FormLabel>
+        <FormLabel>Person: </FormLabel>
+        <span className="person">{person}</span>
         <FormControl
           className="input-person"
           onChange={(event) => setPerson(() => event.target.value)}
         ></FormControl>
       </FormGroup>
       <FormGroup key="Present">
-        <FormLabel>Present</FormLabel>
+        <FormLabel>Present: </FormLabel>
+        <span className="present">{present}</span>
         <FormControl
           className="input-present"
           onChange={(event) => setPresent(() => event.target.value)}

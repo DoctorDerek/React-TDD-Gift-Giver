@@ -56,6 +56,7 @@ ShallowWrapper {
           Remove Gift
 </Unknown>,
       ],
+      "className": "gift",
       "inline": false,
     },
     "ref": null,
@@ -369,6 +370,7 @@ ShallowWrapper {
             Remove Gift
 </Unknown>,
         ],
+        "className": "gift",
         "inline": false,
       },
       "ref": null,

@@ -2,7 +2,7 @@ import React from "react"
 import { shallow } from "enzyme"
 import GiftFunctionComponent from "./GiftFunctionComponent"
 
-describe("Gift", () => {
+describe("GiftFunctionComponent", () => {
   const mockRemove = jest.fn()
   const id = 1
   const props = { id, removeGift: mockRemove }
@@ -13,14 +13,30 @@ describe("Gift", () => {
   })
 
   describe("when typing into the person input", () => {
+    const person = "Uncle"
+
     beforeEach(() => {
-      gift.find(".input-person").simulate("change")
+      gift
+        .find(".input-person")
+        .simulate("change", { target: { value: person } })
+    })
+
+    it("Updates the listed person", () => {
+      expect(gift.find(".person").text()).toEqual(person)
     })
   })
 
   describe("when typing into the present input", () => {
+    const present = "Money"
+
     beforeEach(() => {
-      gift.find(".input-present").simulate("change")
+      gift
+        .find(".input-present")
+        .simulate("change", { target: { value: present } })
+    })
+
+    it("Updates the listed present", () => {
+      expect(gift.find(".present").text()).toEqual(present)
     })
   })
 
