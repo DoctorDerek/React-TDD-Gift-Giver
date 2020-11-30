@@ -43,7 +43,9 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js",
-      "!src/index.js"
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!src/tempPolyfills.js"
     ]
   }
 }
