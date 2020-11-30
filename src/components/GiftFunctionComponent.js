@@ -25,7 +25,7 @@ const Gift = ({ id, removeGift }) => {
         ></FormControl>
       </FormGroup>
       <FormGroup key="Present">
-        <FormLabel>Present: </FormLabel>
+        <FormLabel>Present:</FormLabel>{" "}
         <span className="present">{present}</span>
         <FormControl
           className="input-present"
