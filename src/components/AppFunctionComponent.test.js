@@ -16,7 +16,7 @@ it("Renders correctly", () => {
 
 describe("when clicking the `Add Gift` button", () => {
   beforeEach(() => {
-    app.find("#add-gift-button").first().simulate("click")
+    app.find("#add-gift-button").hostNodes().simulate("click")
   })
 
   it("Adds a new gift to the rendered list", () => {
@@ -28,9 +28,10 @@ describe("when clicking the `Add Gift` button", () => {
   })
 
   describe("and the user wants to remove that gift", () => {
-    // The below tests won't work without using mount
+    // Use .hostNodes() instead of .first() as recommended by:
+    // https://github.com/enzymejs/enzyme/issues/1253#issuecomment-367930412
     beforeEach(() => {
-      app.find(".btn-remove").first().simulate("click")
+      app.find(".btn-remove").hostNodes().simulate("click")
     })
 
     it("Removes the only gift in the list from the DOM", () => {
