@@ -32,6 +32,7 @@ describe("when clicking the `Add Gift` button", () => {
     // https://github.com/enzymejs/enzyme/issues/1253#issuecomment-367930412
     beforeEach(() => {
       app.find(".btn-remove").hostNodes().simulate("click")
+      // This code works equally with Enzyme's shallow & mount
     })
 
     it("Removes the only gift in the list from the DOM", () => {
