@@ -47,5 +47,9 @@
       "!src/setupTests.js",
       "!src/tempPolyfills.js"
     ]
+  },
+  "devDependencies": {
+    "jsdom": "^16.4.0",
+    "jsdom-global": "^3.0.2"
   }
 }

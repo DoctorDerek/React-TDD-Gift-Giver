@@ -1,12 +1,12 @@
 import React from "react"
-import { shallow } from "enzyme"
+import { mount } from "enzyme"
 import AppFunctionComponent from "./AppFunctionComponent"
 
-let app = shallow(<AppFunctionComponent />)
+let app = mount(<AppFunctionComponent />)
 
 beforeEach(() => {
   // Clean up between tests:
-  app = shallow(<AppFunctionComponent />)
+  app = mount(<AppFunctionComponent />)
 })
 
 // It Renders.
@@ -16,7 +16,7 @@ it("Renders correctly", () => {
 
 describe("when clicking the `Add Gift` button", () => {
   beforeEach(() => {
-    app.find("#add-gift-button").simulate("click")
+    app.find("#add-gift-button").first().simulate("click")
   })
 
   it("Adds a new gift to the rendered list", () => {
@@ -29,13 +29,12 @@ describe("when clicking the `Add Gift` button", () => {
 
   describe("and the user wants to remove that gift", () => {
     // The below tests won't work without using mount
-    /*
     beforeEach(() => {
-      app.find(".btn-remove").simulate("click")
+      app.find(".btn-remove").first().simulate("click")
     })
+
     it("Removes the only gift in the list from the DOM", () => {
       expect(app.find("#gift-list").children().length).toEqual(0)
     })
-    */
   })
 })
